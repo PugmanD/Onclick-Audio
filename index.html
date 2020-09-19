@@ -1,0 +1,34 @@
+<!Doctype html>
+<html>
+    <head>
+        <script>
+            function play(){
+                var audio = document.getElementById("audio");
+                audio.play();
+            }
+            function pause(){
+                audio.pause();
+            }
+        </script>
+        <style>
+            div{
+                text-align: center;
+            }
+            #vertical{
+                padding: 25px 60px;
+                background-color: green;
+                color: white;
+                border: none;
+                cursor: pointer;
+                border-radius: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <div>
+            <button onclick="play()" id="vertical">Mr. Blue Sky</button>
+            <button id="vertical" onclick="pause()">&#10074;&#10074;</button>
+        </div>
+        <audio id="audio" src="../Audio/Electric Light Orchestra - Mr. Blue Sky myfreemp3.vip .mp3"></audio>
+    </body>
+</html>
